@@ -1,0 +1,29 @@
+Q:- What are the new tags added in HTML5?
+ANS:-New tag introduced in HTML5
+----->article.
+----->(MOVED) aside.
+----->audio.
+----->canvas.
+----->command.
+----->datalist.
+----->details.
+----->embed.
+
+
+Q:-How to embed audio and video in a webpage?
+ANS:-<video> elements to the page; make them display the default browser controls. Give both of them <source> elements so that browsers will find the audio format they support best and load it.
+
+
+Q:-Semantic element in HTML5? 
+ANS:-Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way. Elements such as <header> , <footer> and <article> are all considered semantic because they accurately describe the purpose of the element and the type of content that is inside them.
+
+
+Q:- Canvas and SVG tags
+ANS:- CANVAS:-Raster based (composed of pixel) 
+              Canvas has poor scalability. Hence it is not suitable for printing on higher resolution.
+              Canvas gives better performance with smaller surface or larger number of objects.
+              Canvas can be modified through script only.
+         SVG:-Vector based (composed of shapes)
+              SVG has better scalability. So it can be printed with high quality at any resolution.
+              SVG gives better performance with smaller number of objects or larger surface.
+              SVG can be modified through script and CSS.
