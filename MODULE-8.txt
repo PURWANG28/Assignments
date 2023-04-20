@@ -1,0 +1,43 @@
+Q:- Explain Life cycle in Class Component and functional component with Hooks?
+
+ANS:- 
+
+Class component Life cycle:-  A React component undergoes three different phases in its lifecycle, including mounting, updating, and unmounting. Each phase has specific methods responsible for a particular stage in a component's lifecycle. These methods are technically particular to class-based components and not intended for functional components.
+
+Phases of a React component's lifecycle:-
+(1)The mounting phase is when a new component is created and inserted into the DOM or, in other words, when the life of a component begins. This can only happen once, and is often called “initial render.”
+
+
+(2)The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when the state is updated. This phase can occur multiple times, which is kind of the point of React.
+
+
+(3)The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
+
+
+----> THE MOUNTING PHASE:- In the mounting phase, a component is prepared for and actually inserted into the DOM. To get through this phase, four lifecycle methods are called: constructor, static getDerivedStateFromProps, render, and componentDidMount.
+
+
+---->THE UPDATING PHASE:- The Updating phase is triggered when component props or state change, and consists of the following methods: static getDerivedFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate, and componentDidUpdate.
+The methods getDerivedFromProps and render are also part of the mounting phase. Since they’ve been covered previously, this section focuses on the other three methods.
+
+
+---->THE UNMOUNTING PHASE:- The unmounting phase is the third and final phase of a React component. At this phase, the component is removed from the DOM. Unmounting only has one lifecycle method involved: componentWillUnmount.
+
+
+
+Function component lifecycle and React Hooks:- Hooks known as default hooks come with React, and you’re also able to create your own custom hook. A custom hook is just a function that starts with use, like useStore, or useWhatever.
+
+The two most common default hooks are useState and useEffect. The useState hook gives state to the functional component, and useEffect allows you to add side effects within it (like after initial render), which aren’t allowed within the function's main body. You can also act upon updates on the state with useEffect.
+
+
+React has released more default hooks, but useState and useEffect are the ones we should be most familiar with.
+
+UseSTATE:-The useState hook is used to store state for a functional component. This hook accepts one parameter: initialState, which will be set as the initial stateful value, and returns two values: the stateful value, and the update function to update the stateful value. The update function accepts one argument, newState, which replaces the existing stateful value. With useState(), whatever you put in the parenthesis is the default state.
+
+
+UseEffect:-With the useEffect hook, you're able to create side effects while maintaining the component's purity. Within this hook, you can send network requests, make subscriptions, and change the state value.
+
+The useEffect hook accepts a function as an argument, where you write all your side effects. This function is invoked after every browser paint and before any new renders (this will depend on the dependency array, which is explained in the next paragraph). This function can return another function called the clean-up function, which can be used to clean up the side effects (i.e. when the component is destroyed) like unsubscribing to a store. It’s kind of a mash up of several of the methods explained in the previous section.
+
+This Hook accepts a second argument called the dependency array, which is an array of dependencies like state or props values, which the useEffect uses as reference to only run when these values change. If the dependency array is empty, then the useEffect will only run once, after the first paint. The dependency array is optional, so if it's not defined, useEffect will fire first when the component is first mounted, and then on every re-render.
+
