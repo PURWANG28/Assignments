@@ -18,8 +18,7 @@ Phases of a React component's lifecycle:-
 
 
 ---->THE UPDATING PHASE:- The Updating phase is triggered when component props or state change, and consists of the following methods: static getDerivedFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate, and componentDidUpdate.
-The methods getDerivedFromProps and render are also part of the mounting phase. Since they’ve been covered previously, this section focuses on the other three methods.
-
+The methods getDerivedFromProps and render are also part of the mounting phase. 
 
 ---->THE UNMOUNTING PHASE:- The unmounting phase is the third and final phase of a React component. At this phase, the component is removed from the DOM. Unmounting only has one lifecycle method involved: componentWillUnmount.
 
